@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+# list Catagory
+#GET		/catagory/list				controllers.CatagoryAction.list() 
+
+# show Catagory with nothing,to creating page    
+#GET 	/catagory/show				controllers.CatagoryAction.show(id="")
+# show Catagory info view or updating page 
+#GET 	/catagory/show/:id			controllers.CatagoryAction.show(id)
+
+# add Catagory
+#POST 	/catagory/add				controllers.CatagoryAction.add()
+
+# modify Catagory
+#POST 	/catagory/modify			controllers.CatagoryAction.modify()
