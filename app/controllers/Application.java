@@ -9,10 +9,8 @@ public class Application extends Controller {
 
 	public static Result index() {
 
-		int rowCount = 0 ;// models.system.Catagory.find.findRowCount();
-
-		return ok(index.render("Your new application is ready. row count: "
-				+ rowCount));
+		
+		return ok(index.render());
 	}
 
 	public static Result list(){
